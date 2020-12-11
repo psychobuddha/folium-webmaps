@@ -4,13 +4,13 @@ import pandas
 # read data from csv
 data = pandas.read_csv('Volcanoes.txt')
 
-# select LAT and LONG and ELEVATION
 lats = list(data['LAT'])
 longs = list(data['LON'])
 elev = list(data['ELEV'])
 
-# function for generating colors based on elevation:
 def color_maker(elevation):
+    '''generate colors based on elevation'''
+
     if int(elevation) < 1000:
         return 'green'
     elif int(elevation) >= 1000 and int(elevation) < 2000:
