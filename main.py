@@ -36,4 +36,4 @@ else 'orange' if 10000000 <= x['properties']['POP2005'] < 20000000 else 'red'}))
 
 map.add_child(fg)
 
-map.save('map1.html')
+map.save('index.html')
